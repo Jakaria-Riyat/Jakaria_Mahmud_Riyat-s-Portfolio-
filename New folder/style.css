@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-weight: bold;
+}
+.logo {
+    font-size: 2em;
+    color: #555;
+    cursor: default;
+}
+.logo span {
+    color: #7d2ae8;
+}
+.navigation {
+    margin-left: -300px;
+}
+.navigation a {
+    font-size: 1.1em;
+    color: #555;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 40px;
+    transition: .3s;
+}
+.navigation a:hover {
+    color: #7d2ae8;
+}
+.btn-talk {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 35px;
+    background: #7d2ae8;
+    border-radius: 10px;
+    border: 2px solid #7d2ae8;
+    font-weight: 500;
+    transition: .3s;
+}
+.btn-talk:hover {
+    color: #7d2ae8;
+    background: transparent;
+}
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('20250204_1307563.jpg');
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+    
+}
+
+
+.home img {
+    position: absolute;
+    right: 50px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+}
+
+
+
+.content {
+    max-width: 500px;
+    color: #555;
+}
+.content h2 {
+    font-size: 3em;
+}
+.content h2 span {
+    color: #7d2ae8;
+}
+.content h4 {
+    font-size: 2em;
+}
+.content p {
+    padding: 10px 0 40px 0;
+}
+.btn-group a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #7d2ae8;
+    border-radius: 10px;
+    border: 2px solid #7d2ae8;
+    font-weight: 500;
+    transition: .3s;
+}
+.btn-group a:hover:nth-child(1) {
+    color: #7d2ae8;
+    background: transparent;
+}
+.btn-group a:nth-child(2) {
+    color: #7d2ae8;
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+.btn-group a:hover:nth-child(2) {
+    color: #fff;
+    background: #7d2ae8;
+}
+.social-icons {
+    position: absolute;
+    bottom: 50px;
+}
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #7d2ae8;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #fff;
+    outline: 2px solid #7d2ae8;
+    transition: .3s;
+}
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+.social-icons a i {
+    color: #fff;
+}
+
+
+
+/* Timeline */
+
+body {
+    background: #acb5c6;
+    color: #ededed;
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 9%;
+}
+
+.timeline .timeline-row {
+    display: flex;
+    column-gap: 64px;
+    flex-wrap: wrap;
+}
+
+.timeline-row .timeline-column {
+    flex: 1 1 320px;
+}
+
+.timeline-column .title {
+    position: relative;
+    display: inline-block;
+    font-size: 28px;
+    margin: 32px 0 16px 30px;
+}
+
+.timeline-column .timeline-box {
+    position: relative;
+    border-left: 2px solid #7d2ae8;
+}
+
+.timeline-box .timeline-content {
+    position: relative;
+    padding-left: 27px;
+}
+
+.timeline-box .timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10.5px;
+    width: 20px;
+    height: 20px;
+    background: #7d2ae8;
+    border-radius: 50%;
+}
+
+.timeline-content .content {
+    padding: 24px;
+    border: 2px solid #7d2ae8;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.timeline-content .content .year {
+    font-size: 16px;
+    color: #7d2ae8;
+}
+
+.timeline-content .content .year i {
+    margin-right: 8px;
+}
+
+.timeline-content .content h3 {
+    font-size: 19px;
+    margin: 8px 0;
+}
+
+.timeline-content .content p {
+    font-size: 16px;
+}
+
+.animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 105%;
+    height: 100%;
+    background: #7d2ae8;
+    animation: show-right 1s ease forwards;
+    animation-delay: calc(.5s * var(--i));
+}
+
+@keyframes show-right {
+    100% {
+        width: 0;
+    }
+}
